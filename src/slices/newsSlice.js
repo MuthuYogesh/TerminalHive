@@ -1,12 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit'
 import axios from 'axios'
 
-// const API_KEY = process.env.REACT_APP_TECHIESPOT_API_KEY
+const API_KEY = process.env.REACT_APP_TECHIESPOT_API_KEY
 
 const fetchNewsAsync = () => async (dispatch)=>{
     try{
         dispatch(fetchNewsstart());
-        const response = await axios.get(`https://newsapi.org/v2/top-headlines?category=technology&apiKey=e1fd4303c9104346892912e37be12c17`);
+        const response = await axios.get(`https://newsapi.org/v2/top-headlines?category=technology&apiKey=${API_KEY}`);
         const result = response.data.articles
         dispatch(fetchNewsSuccess(result));
     }

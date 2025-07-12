@@ -31,7 +31,7 @@ export default function News() {
             </div>
           )
         })
-        :<div> Error! Try reload again </div>
+        :<div className={style.error}> Error! Try reload again </div>
         }
       </div>
     </>

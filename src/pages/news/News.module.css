@@ -27,3 +27,11 @@
     width: 100%;
     margin-top: 10px;
 }
+
+.error{
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}

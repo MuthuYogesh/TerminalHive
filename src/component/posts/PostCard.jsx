@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import profile from '../images/profile.png'
-import image from '../../component/images/img.png'
 import like from '../../component/images/like1.png'
 import liked from '../../component/images/like2.png'
 import comment from '../../component/images/comments.png'
@@ -49,7 +48,7 @@ export default function PostCard({post}) {
         sessionStorage.setItem("currentUser", JSON.stringify(updatedCurrentUser));
       }
     }
-  }, [userList, currentUser]);
+  }, [userList, currentUser, post.likedBy]);
 
   const handleLike = () => {
     // if (post.likes.includes(currentUser.name)) {
@@ -79,20 +78,20 @@ const toggleCmntInput = () => {
   return (
     <>
         <div className={style.postHeader}>
-            <img className={style.postUserProfileInside} src={profile} alt="img"/>
+            <img className={style.postUserProfileInside} src={profile} alt="profile"/>
             <h4>{targetUser}</h4>
             <div className={style.postFollow} onClick={handleFollow}>{(isFollowing)?<p>Following</p>:<p>Follow</p>}</div>
         </div>
-        <img src={currentPost.userPost.postImage} className={style.postImg}/>
+        <img src={currentPost.userPost.postImage} className={style.postImg} alt='post'/>
         <div className={style.postFooter}>
           {(currentLike===-1)&&<img className={style.postFooterLike} src={like} alt="like" onClick={handleLike}/>}
-          {(currentLike!==-1)&&<img className={style.postFooterLike} src={liked} alt="like" onClick={handleLike}/>}
+          {(currentLike!==-1)&&<img className={style.postFooterLike} src={liked} alt="liked" onClick={handleLike}/>}
           <img className={style.postFooterCmnt} src={comment} alt="comments" onClick={toggleCmntInput}/>
           <img className={style.postFooterShare} src={share} alt="like"/>
           <img className={style.postFooterSave} src={save} alt="like"/>
         </div>
         <div className={style.description}>
-          <img className={style.postUserProfileInside} src={profile} alt="img"/>
+          <img className={style.postUserProfileInside} src={profile} alt="profile"/>
           <strong>{currentPost.userProfile.userName}</strong>
           <p>{currentPost.userPost.discription}</p>
         </div>

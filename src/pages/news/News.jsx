@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { news, fetchNewsAsync } from '../../slices/newsSlice'
@@ -27,7 +27,7 @@ export default function News() {
               <h2>{article.title}</h2>
               <p>{article.description} <Link to={article.url}>Click here</Link></p>
               
-              <img src={article.urlToImage} alt='Image Here'></img>
+              <img src={article.urlToImage} alt='News'></img>
             </div>
           )
         })

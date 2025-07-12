@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import plus from '../images/add.png'
 import groupPic from '../images/group.jpg'
 import style from './Community.module.css'

@@ -1,0 +1,61 @@
+.navbar{
+    height: 5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #010100;
+    color: #f2f2f3;
+}
+
+.left{
+    display: flex;
+    margin-left: 2.5rem;
+    align-items: center;
+}
+
+.logoName{
+    font-size: 30px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.right{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.item{
+    margin-right: 3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logo{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.logout{
+    width: 2rem;
+    height: 2rem;
+}
+
+.logout:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.logout:active{
+    transform: translateY(2px);
+}
+
+.link{
+    text-decoration: none;
+    color: #f2f2f3;
+}
+

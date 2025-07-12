@@ -1,0 +1,29 @@
+.container{
+    width: 60vw;
+    height: 100vh;
+    overflow-x: scroll;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.news{
+    background-color: #1973e6;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+}
+
+
+.newsPallete h2{
+    width: 100%;
+    color: aliceblue;
+}
+
+.newsPallete img{
+    /* height: 30rem; */
+    width: 100%;
+    margin-top: 10px;
+}

@@ -1,0 +1,89 @@
+.container{
+    border-top: 2px solid gray;
+    background-color: #041922;
+    height: 100vh;
+    display: flex;
+}
+
+.home{
+    background-color: #1973e6;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+}
+
+.popupOverlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;            
+}
+
+.communityPopup {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  min-width: 300px;
+  height: fit-content;
+  box-shadow: 0 2px 10px rgb(13 158 194/0.5);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #010001;
+}
+
+.communityPopup input{
+    height: 2rem;
+    width: 80%;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.communityPopup input:focus{
+    outline: none;
+    border: 1px solid #0d9ec2;
+    box-shadow: 0px 1px 5px #0d9ec2;
+}
+
+
+.btns{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.customStyle{
+    width: 5rem;
+    height: 2.3rem;
+
+}
+
+.close{
+    width: 20px;
+    height: 20px;
+    margin-left: 18rem;
+    border-radius: 6px;
+}
+
+.close:hover{
+    box-shadow: 0px 3px 10px rgba(238, 16, 16, 0.8);
+}
+
+.close:active{
+    transform: translateY(2px);
+}
+
+.communityPopup h2{
+    margin-top: 0;
+    font-size: 25px;
+    color: aliceblue;
+}

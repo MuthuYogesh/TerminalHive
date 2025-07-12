@@ -1,0 +1,114 @@
+.community{
+    height: 100vh;
+    width: 25%;
+    border-right: 2px solid gray;
+    overflow: scroll;
+    color: aliceblue;
+    
+    
+}
+
+.community::-webkit-scrollbar{
+    display: none;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1rem 1rem 1.5rem;
+    margin-top: 1rem;
+}
+
+.top h2{
+    font-size: 35px;
+    background: linear-gradient(to right, #eb3d86, #068cb1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.2rem;
+    margin: 0;
+
+}
+
+.communityAdd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    aspect-ratio: 1;
+    padding: 0.2rem;
+    margin-top: 10px;
+    margin-right: 10px;
+    transform-origin: center center;
+}
+
+.communityAdd:hover{
+    animation: rotatebefore 0.2s ease-in-out forwards;
+    cursor: default;
+    image-rendering: crisp-edges;
+}
+
+@keyframes rotatebefore {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+.communityAdd:active{
+    
+    animation: rotateafter 0.2s ease-in-out;
+}
+
+@keyframes rotateafter {
+  from {
+    transform: rotate(45deg) translateY(0px);
+  }
+  to {
+    transform: rotate(0deg) translateY(3px);
+  }
+}
+
+.bottom{
+  height: fit-content;
+  padding: 1rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.communitySubDiv{
+  height: fit-content;
+  width: 90%;
+  box-shadow: 0px 3px 10px rgba(61, 71, 73, 0.7);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.communitySubDiv h3{
+  margin: 0;
+}
+
+.communityImg{
+  height: 8rem ;
+  width: 50%;
+}
+
+.communityInfo{
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.communityDetails{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}

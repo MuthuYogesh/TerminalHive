@@ -1,0 +1,27 @@
+.defaultStyle{
+    height: 3rem;
+    padding: 0.5rem 0rem;
+    border-radius: 5px;
+    border: none;
+    background-image: linear-gradient(to right, #37ccdd, #5a86e0);
+    color: #fdffff;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-image 2s ease-in-out;
+    
+}
+
+.defaultStyle:hover{
+    background-image: linear-gradient(to top, #5a86e0, #37ccdd);
+    box-shadow: 0px 1px 5px #0d9ec2;
+    cursor: pointer;
+    /* color: blueviolet; */
+}
+
+.defaultStyle:active{
+    transform: translate(0px, 2px);
+}
+
+
+
+         
